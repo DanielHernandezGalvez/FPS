@@ -568,7 +568,7 @@ Animator:
   m_GameObject: {fileID: 2892892025328500615}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c4225d907e1ff754e96eb87b0ab153ee, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1189,7 +1189,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b6f2e9fc4345f42bed7daa5160a356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerManagment
+  gameManager: {fileID: 0}
   health: 100
+  healthText: {fileID: 0}
 --- !u!1 &7780726701069790763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,3 +1499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30eda64748fcd934fbeec0c221daf474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponManager
+  playerCam: {fileID: 1748587986950997981}
+  range: 100
+  damage: 25
+  playerAnimator: {fileID: 1771006360162700212}

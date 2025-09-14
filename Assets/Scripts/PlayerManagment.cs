@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
 
 public class PlayerManagment : MonoBehaviour
@@ -16,7 +15,6 @@ public class PlayerManagment : MonoBehaviour
         if(health <= 0)
         {
             gameManager.GameOver();
-            //SceneManager.LoadScene(0);
         }
     }
 }

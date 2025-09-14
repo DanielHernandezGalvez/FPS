@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -45,6 +46,18 @@ public class GameManager : MonoBehaviour
 
         Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(1);
+    }
+
+    public void BackToMainMenu()
+    {
+        Time.timeScale = 0;
+        SceneManager.LoadScene(0);
     }
 
 }
